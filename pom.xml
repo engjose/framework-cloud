@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--gav-->
+    <groupId>com.github.ov</groupId>
+    <artifactId>framework-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <!-- 版本插件 -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 分发管理 -->
+    <distributionManagement>
+        <repository>
+            <id>${distribution.releases.id}</id>
+            <url>${distribution.releases.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${distribution.snapshots.id}</id>
+            <url>${distribution.snapshots.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <modules>
+        <module>framework-cloud-parent</module>
+        <module>framework-cloud-web</module>
+        <module>framework-cloud-service</module>
+        <module>framework-cloud-dao</module>
+        <module>framework-cloud-model</module>
+        <module>framework-cloud-common</module>
+        <module>framework-cloud-config</module>
+        <module>framework-cloud-integration</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+
+</project>
