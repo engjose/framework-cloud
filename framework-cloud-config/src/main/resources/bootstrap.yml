@@ -6,6 +6,8 @@ swagger:
   enable: true
 
 spring:
+  profiles:
+    active: dev
   application:
     name: framework-cloud
 
