@@ -39,7 +39,7 @@
     </dependencies>
 
     <build>
-        <finalName>framework-cloud-com.github.ov.framework.cloud.config.web</finalName>
+        <finalName>framework-cloud</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

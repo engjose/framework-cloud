@@ -34,6 +34,7 @@
 
     <modules>
         <module>framework-cloud-parent</module>
+        <module>framework-cloud-facade</module>
         <module>framework-cloud-web</module>
         <module>framework-cloud-service</module>
         <module>framework-cloud-dao</module>
